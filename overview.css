@@ -62,20 +62,20 @@
     filter: invert(90%);
 }
 
-.initial ul li a,
-.initial ul li a:link,
-.initial ul li a:visited,
-.initial ul li a:hover,
-.initial ul li a:active {
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
     text-decoration: none;
     color: black;
 }
 
-.initial.dark ul li a,
-.initial.dark ul li a:link,
-.initial.dark ul li a:visited,
-.initial.dark ul li a:hover,
-.initial.dark ul li a:active {
+.dark a,
+.dark a:link,
+.dark a:visited,
+.dark a:hover,
+.dark a:active {
     text-decoration: none;
     color: white;
 }
