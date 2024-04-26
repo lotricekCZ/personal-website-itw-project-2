@@ -8,10 +8,11 @@ body {
 
 @media (min-aspect-ratio: 1/1) {
 
-    main>.content {
+    main>.content>* {
 
-        padding: 1rem;
+        padding: 0rem;
         padding-left: 20rem;
+        padding-top: 20rem;
         padding-right: 8rem;
     }
 
@@ -55,8 +56,8 @@ body {
         list-style-type: none;
     }
 
-    main>.content {
+    main>.content>* {
         padding: 1rem;
-        padding-top: 4.5vh;
+        padding-top: 3vh;
     }
 }

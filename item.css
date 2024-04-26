@@ -1,0 +1,50 @@
+/* typical xp-item
+ <div class="xp-item">
+    <div class="job title">
+        <h3></h3>
+        <h4></h4>
+    </div>
+    <p class="time period"></p>
+    <p class="verbose"></p>
+</div>
+
+*/
+
+.xp-item {
+    display: grid;
+}
+
+/* xp item is for desktop*/
+@media (min-aspect-ratio: 1/1) {
+    
+    .xp-item {
+        grid-template-columns: minmax(auto, 20%) minmax(auto, 20%) minmax(auto, 20%);
+        grid-template-areas: 
+        "title . time"
+        "title . ."
+        "verb verb verb";
+    }
+}
+
+@media (max-aspect-ratio: 1/1) {
+    
+    .xp-item {
+        grid-template-columns: minmax(auto, 80%);
+        grid-template-areas: 
+        "title"
+        "time"
+        "verb";
+    }
+}
+
+.xp-item>.title {
+    grid-area: title;
+}
+
+.xp-item>.time {
+    grid-area: time;
+}
+
+.xp-item>.verbose {
+    grid-area: verb;
+}

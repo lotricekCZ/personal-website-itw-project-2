@@ -1,6 +1,6 @@
 
 #menu-toggle {
-    background-color: #0D0090;
+    background-color: #060046;
     border: none;
     min-width: 3rem;
     min-height: 3rem;
@@ -8,18 +8,17 @@
     height: 3.5vh;
     color: white;
     text-align: center;
-    
     font-size: 2rem;
     transition: background-color 0.5s;
 }
 
 #menu-toggle:hover {
-    background-color: #2712FF;
+    background-color: #0D0090;
     transition: background-color 0.5s;
 }
 
 .site-nav {
-    background-color: #0D0090;
+    background-color: #060046;
     text-decoration: none;
 }
 

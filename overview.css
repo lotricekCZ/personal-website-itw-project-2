@@ -1,0 +1,81 @@
+.initial {
+    padding-left: 17vh;
+    display: grid;
+    grid-auto-rows: min-content;
+    /* background: rgb(14, 14, 14); */
+    background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Rotating_earth_%28large%29.gif/200px-Rotating_earth_%28large%29.gif"), linear-gradient(178deg, rgba(14, 14, 14, 1) 0%, rgba(14, 14, 14, 1) 91%, rgba(255, 255, 255, 1) 94%);
+    background-repeat: no-repeat, no-repeat;
+    height: 110vh;
+}
+
+
+@media (min-aspect-ratio: 1/1) {
+    .initial {
+        grid-template-columns: minmax(auto, 20%) minmax(auto, 20%);
+        grid-template-areas:
+            "name name . ."
+            "contacts contacts contacts ."
+            "aboutme aboutme . ."
+            "socials socials socials .";
+    }
+}
+
+@media (max-aspect-ratio: 1/1) {
+    .initial {
+        grid-template-areas:
+            "name"
+            "contacts"
+            "aboutme"
+            "socials";
+    }
+}
+
+.dark * {
+    color: rgb(240, 240, 240);
+    font-weight: bold;
+}
+
+.initial .name {
+    grid-area: name;
+}
+
+.initial .contacts {
+    grid-area: contacts;
+}
+
+.initial>p {
+    grid-area: aboutme;
+}
+
+.initial .socials {
+    grid-area: socials;
+}
+
+.initial ul li {
+    display: inline;
+    margin-right: 1em;
+}
+
+.initial ul li svg {
+    min-width: 2rem;
+    max-width: 4rem;
+    filter: invert(90%);
+}
+
+.initial ul li a,
+.initial ul li a:link,
+.initial ul li a:visited,
+.initial ul li a:hover,
+.initial ul li a:active {
+    text-decoration: none;
+    color: black;
+}
+
+.initial.dark ul li a,
+.initial.dark ul li a:link,
+.initial.dark ul li a:visited,
+.initial.dark ul li a:hover,
+.initial.dark ul li a:active {
+    text-decoration: none;
+    color: white;
+}
