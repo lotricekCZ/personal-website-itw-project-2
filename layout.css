@@ -1,3 +1,7 @@
+/* this ia a file that defines the overall website layout, 
+does not affect items of a list, but whether 
+there will be horizontal or vertical website layout */
+
 body {
     margin: 0;
 }
@@ -5,6 +9,7 @@ body {
 @media (min-aspect-ratio: 1/1) {
 
     main>.content {
+
         padding: 1rem;
         padding-left: 20rem;
         padding-right: 8rem;
@@ -39,25 +44,19 @@ body {
     }
 
     main>.site-nav {
-        padding: 1em;
+        position: fixed;
+        padding: 0.5vh;
         top: 0;
-        height: 100%;
+        width: 100%;
     }
 
     main>.site-nav ul {
         display: none;
+        list-style-type: none;
     }
-}
 
-
-main>.content {
-    background-color: #ffa08c;
-}
-
-main>.site-nav {
-    background-color: #ffff64;
-}
-
-main>.footer {
-    background-color: #8cffa0;
+    main>.content {
+        padding: 1rem;
+        padding-top: 4.5vh;
+    }
 }

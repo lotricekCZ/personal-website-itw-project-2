@@ -1,0 +1,42 @@
+
+#menu-toggle {
+    background-color: #0D0090;
+    border: none;
+    min-width: 3rem;
+    min-height: 3rem;
+    width: 3.5vh;
+    height: 3.5vh;
+    color: white;
+    text-align: center;
+    
+    font-size: 2rem;
+    transition: background-color 0.5s;
+}
+
+#menu-toggle:hover {
+    background-color: #2712FF;
+    transition: background-color 0.5s;
+}
+
+.site-nav {
+    background-color: #0D0090;
+    text-decoration: none;
+}
+
+.site-nav ul li {
+    list-style-type: none;
+}
+
+.site-nav ul li a,
+.site-nav ul li a:link, 
+.site-nav ul li a:visited, 
+.site-nav ul li a:hover, 
+.site-nav ul li a:active{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+}
+
+.site-nav ul li a{
+    
+}
