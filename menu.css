@@ -1,4 +1,3 @@
-
 #menu-toggle {
     background-color: #060046;
     border: none;
@@ -27,15 +26,25 @@
 }
 
 .site-nav ul li a,
-.site-nav ul li a:link, 
-.site-nav ul li a:visited, 
-.site-nav ul li a:hover, 
-.site-nav ul li a:active{
+.site-nav ul li a:link,
+.site-nav ul li a:visited,
+.site-nav ul li a:hover,
+.site-nav ul li a:active {
     font-size: 1.5rem;
     text-decoration: none;
     color: white;
 }
 
-.site-nav ul li a{
-    
+
+
+@media (min-aspect-ratio: 1/1) {
+    .site-nav img {
+        width: 70%;
+    }
+}
+
+@media (max-aspect-ratio: 1/1) {
+    .site-nav img {
+        display: none;
+    }
 }

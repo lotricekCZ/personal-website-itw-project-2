@@ -30,7 +30,7 @@ body {
     }
 
     main>.site-nav:nth-child(n) {
-        padding-top: 40vh;
+        padding-top: 2vh;
     }
 
     main>.footer {

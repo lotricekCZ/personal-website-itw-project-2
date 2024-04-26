@@ -16,34 +16,35 @@
 
 /* xp item is for desktop*/
 @media (min-aspect-ratio: 1/1) {
-    
+
     .xp-item {
         grid-template-columns: minmax(auto, 30%) minmax(auto, 20%) minmax(auto, 30%);
-        grid-template-areas: 
-        "title . time"
-        "title . ."
-        "verb verb verb";
+        grid-template-areas:
+            "title . time"
+            "title . ."
+            "verb verb verb";
     }
 
     #projects .xp-item {
-        grid-template-areas: 
-        "title . time"
-        "title . link"
-        "verb verb verb";
+        grid-template-areas:
+            "title . time"
+            "title . link"
+            "verb verb verb";
     }
+
     .xp-item>.time {
         margin: auto;
     }
 }
 
 @media (max-aspect-ratio: 1/1) {
-    
+
     .xp-item {
         grid-template-columns: minmax(auto, 40%) minmax(auto, 40%);
-        grid-template-areas: 
-        "title title"
-        "time link"
-        "verb verb";
+        grid-template-areas:
+            "title title"
+            "time link"
+            "verb verb";
     }
 }
 
@@ -66,6 +67,7 @@
     font-weight: 900;
     transition: background-color 0.5s;
 }
+
 .xp-item>a:hover,
 .xp-item>a:active {
     grid-area: link;
@@ -92,5 +94,5 @@
 .xp-item>.verbose {
     grid-area: verb;
     padding-bottom: 0.5em;
-    border-bottom: 1px #eee  solid;
+    border-bottom: 1px #eee solid;
 }
