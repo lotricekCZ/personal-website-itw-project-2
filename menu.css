@@ -19,6 +19,7 @@
 .site-nav {
     background-color: #060046;
     text-decoration: none;
+    z-index: 1024;
 }
 
 .site-nav ul li {

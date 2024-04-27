@@ -3,8 +3,10 @@
     display: grid;
     grid-auto-rows: min-content;
     /* background: rgb(14, 14, 14); */
-    background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Rotating_earth_%28large%29.gif/200px-Rotating_earth_%28large%29.gif"), linear-gradient(178deg, rgba(14, 14, 14, 1) 0%, rgba(14, 14, 14, 1) 91%, rgba(255, 255, 255, 1) 94%);
+    background: url("./assets/background.gif"), linear-gradient(178deg, rgba(14, 14, 14, 1) 0%, rgba(14, 14, 14, 1) 91%, rgba(255, 255, 255, 1) 94%);
     background-repeat: no-repeat, no-repeat;
+    background-size: 50% 110vh, auto;
+    background-position: right 15%;
     height: 110vh;
 }
 
@@ -27,6 +29,8 @@
             "contacts"
             "aboutme"
             "socials";
+            background-size: 50% 102vh, auto;
+            background-position: right 15%;
     }
 }
 
