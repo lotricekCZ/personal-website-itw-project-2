@@ -1,98 +1,98 @@
 /* typical xp-item
  <div class="xp-item">
-    <div class="job title">
-        <h3></h3>
-        <h4></h4>
-    </div>
-    <p class="time period"></p>
-    <p class="verbose"></p>
+	<div class="job title">
+		<h3></h3>
+		<h4></h4>
+	</div>
+	<p class="time period"></p>
+	<p class="verbose"></p>
 </div>
 
 */
 
 .xp-item {
-    display: grid;
+	display: grid;
 }
 
 /* xp item is for desktop*/
 @media (min-aspect-ratio: 1/1) {
 
-    .xp-item {
-        grid-template-columns: minmax(auto, 30%) minmax(auto, 20%) minmax(auto, 30%);
-        grid-template-areas:
-            "title . time"
-            "title . ."
-            "verb verb verb";
-    }
+	.xp-item {
+		grid-template-columns: minmax(auto, 30%) minmax(auto, 20%) minmax(auto, 30%);
+		grid-template-areas:
+			"title . time"
+			"title . ."
+			"verb verb verb";
+	}
 
-    #projects .xp-item {
-        grid-template-areas:
-            "title . time"
-            "title . link"
-            "verb verb verb";
-    }
+	#projects .xp-item {
+		grid-template-areas:
+			"title . time"
+			"title . link"
+			"verb verb verb";
+	}
 
-    .xp-item>.time {
-        margin: auto;
-    }
+	.xp-item>.time {
+		margin: auto;
+	}
 }
 
 @media (max-aspect-ratio: 1/1) {
 
-    .xp-item {
-        grid-template-columns: minmax(auto, 40%) minmax(auto, 40%);
-        grid-template-areas:
-            "title title"
-            "time link"
-            "verb verb";
-    }
+	.xp-item {
+		grid-template-columns: minmax(auto, 40%) minmax(auto, 40%);
+		grid-template-areas:
+			"title title"
+			"time link"
+			"verb verb";
+	}
 }
 
 .xp-item>.title {
-    grid-area: title;
+	grid-area: title;
 }
 
 .xp-item>a,
 .xp-item>a:visited {
-    grid-area: link;
-    background-color: #060046;
-    margin: auto;
-    width: 50%;
-    height: 50%;
-    padding: 0.5rem;
-    margin-bottom: auto;
-    margin-top: auto;
-    text-align: center;
-    color: white;
-    font-weight: 900;
-    transition: background-color 0.5s;
+	grid-area: link;
+	background-color: #060046;
+	margin: auto;
+	width: 50%;
+	height: 50%;
+	padding: 0.5rem;
+	margin-bottom: auto;
+	margin-top: auto;
+	text-align: center;
+	color: white;
+	font-weight: 900;
+	transition: background-color 0.5s;
 }
 
 .xp-item>a:hover,
 .xp-item>a:active {
-    grid-area: link;
+	grid-area: link;
 
-    background-color: #0D0090;
-    margin: auto;
-    margin-bottom: auto;
-    margin-top: auto;
-    text-align: center;
-    width: 50%;
-    height: 50%;
-    padding: 0.5rem;
-    color: white;
-    font-weight: 900;
-    transition: background-color 0.5s;
+	background-color: #0D0090;
+	margin: auto;
+	margin-bottom: auto;
+	margin-top: auto;
+	text-align: center;
+	width: 50%;
+	height: 50%;
+	padding: 0.5rem;
+	color: white;
+	font-weight: 900;
+	transition: background-color 0.5s;
 }
 
 .xp-item>.time {
-    grid-area: time;
-    color: #CF5E00;
-    font-weight: 500;
+	grid-area: time;
+	color: #CF5E00;
+	font-weight: 500;
 }
 
 .xp-item>.verbose {
-    grid-area: verb;
-    padding-bottom: 0.5em;
-    border-bottom: 1px #eee solid;
+	grid-area: verb;
+	padding-bottom: 0.5em;
+	border-bottom: 1px #eee solid;
 }

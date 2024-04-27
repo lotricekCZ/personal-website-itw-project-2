@@ -3,61 +3,61 @@ does not affect items of a list, but whether
 there will be horizontal or vertical website layout */
 
 body {
-    margin: 0;
+	margin: 0;
 }
 
 @media (min-aspect-ratio: 1/1) {
 
-    main>.content>* {
+	main>.content>* {
 
-        padding: 0rem;
-        padding-left: 20rem;
-        padding-top: 6rem;
-        padding-right: 8rem;
-    }
+		padding: 0rem;
+		padding-left: 20rem;
+		padding-top: 6rem;
+		padding-right: 8rem;
+	}
 
-    main>.site-nav {
-        text-align: center;
-        position: fixed;
-        width: 17rem;
-        height: 100vh;
-        top: 0;
-        left: 0;
-    }
+	main>.site-nav {
+		text-align: center;
+		position: fixed;
+		width: 17rem;
+		height: 100vh;
+		top: 0;
+		left: 0;
+	}
 
-    main>.site-nav>button {
-        display: none;
-    }
+	main>.site-nav>button {
+		display: none;
+	}
 
-    main>.site-nav:nth-child(n) {
-        padding-top: 2vh;
-    }
+	main>.site-nav:nth-child(n) {
+		padding-top: 2vh;
+	}
 
-    main>.footer {
-        padding: 1em;
-    }
+	main>.footer {
+		padding: 1em;
+	}
 }
 
 @media (max-aspect-ratio: 1/1) {
-    main {
-        display: flex;
-        flex-direction: column;
-    }
+	main {
+		display: flex;
+		flex-direction: column;
+	}
 
-    main>.site-nav {
-        position: fixed;
-        padding: 0.5vh;
-        top: 0;
-        width: 100%;
-    }
+	main>.site-nav {
+		position: fixed;
+		padding: 0.5vh;
+		top: 0;
+		width: 100%;
+	}
 
-    main>.site-nav ul {
-        display: none;
-        list-style-type: none;
-    }
+	main>.site-nav ul {
+		display: none;
+		list-style-type: none;
+	}
 
-    main>.content>* {
-        padding: 1rem;
-        padding-top: 3vh;
-    }
+	main>.content>* {
+		padding: 1rem;
+		padding-top: 3vh;
+	}
 }

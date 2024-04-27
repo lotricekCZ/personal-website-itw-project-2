@@ -1,29 +1,29 @@
 #menu-toggle {
-    background-color: #060046;
-    border: none;
-    min-width: 3rem;
-    min-height: 3rem;
-    width: 3.5vh;
-    height: 3.5vh;
-    color: white;
-    text-align: center;
-    font-size: 2rem;
-    transition: background-color 0.5s;
+	background-color: #060046;
+	border: none;
+	min-width: 3rem;
+	min-height: 3rem;
+	width: 3.5vh;
+	height: 3.5vh;
+	color: white;
+	text-align: center;
+	font-size: 2rem;
+	transition: background-color 0.5s;
 }
 
 #menu-toggle:hover {
-    background-color: #0D0090;
-    transition: background-color 0.5s;
+	background-color: #0D0090;
+	transition: background-color 0.5s;
 }
 
 .site-nav {
-    background-color: #060046;
-    text-decoration: none;
-    z-index: 1024;
+	background-color: #060046;
+	text-decoration: none;
+	z-index: 1024;
 }
 
 .site-nav ul li {
-    list-style-type: none;
+	list-style-type: none;
 }
 
 .site-nav ul li a,
@@ -31,21 +31,24 @@
 .site-nav ul li a:visited,
 .site-nav ul li a:hover,
 .site-nav ul li a:active {
-    font-size: 1.5rem;
-    text-decoration: none;
-    color: white;
+	font-size: 1.5rem;
+	text-decoration: none;
+	color: white;
 }
 
 
 
 @media (min-aspect-ratio: 1/1) {
-    .site-nav img {
-        width: 70%;
-    }
+	.site-nav img {
+		width: 70%;
+	}
+	.site-nav ul {
+		padding-left: 0px;
+	}
 }
 
 @media (max-aspect-ratio: 1/1) {
-    .site-nav img {
-        display: none;
-    }
+	.site-nav img {
+		display: none;
+	}
 }
