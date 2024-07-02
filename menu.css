@@ -42,6 +42,7 @@
 	.site-nav img {
 		width: 70%;
 	}
+
 	.site-nav ul {
 		padding-left: 0px;
 	}
@@ -50,5 +51,12 @@
 @media (max-aspect-ratio: 1/1) {
 	.site-nav img {
 		display: none;
+	}
+
+	.site-nav ul li {
+		font-size: 2rem;
+		text-decoration: none;
+		margin-top: 2rem;
+		color: white;
 	}
 }

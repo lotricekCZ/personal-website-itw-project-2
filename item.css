@@ -54,6 +54,7 @@
 
 .xp-item>a,
 .xp-item>a:visited {
+	align-content: center;
 	grid-area: link;
 	background-color: #060046;
 	margin: auto;
@@ -71,7 +72,7 @@
 .xp-item>a:hover,
 .xp-item>a:active {
 	grid-area: link;
-
+	align-content: center;
 	background-color: #0D0090;
 	margin: auto;
 	margin-bottom: auto;
